@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+    font-size: 2.0rem;
+    font-weight: 800;
+    line-height: 1;
+    margin: 90px 0px;
+}
+
+h1:hover,
+h2:hover,
+h3:hover {
+    background: linear-gradient(90deg, rgba(134, 84, 57, 1) 0%, rgb(198, 139, 89) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.3)
+}
+
+
+/* 
+* .Home,
+.history-trail,
+.join-me,
+.about {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.Home {
+    background-color: #242424;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px
+}
+
+.history-trail {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+}
+
+.join-me {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+}
+
+.about {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+}
+
+*/

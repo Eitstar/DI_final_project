@@ -1,4 +1,52 @@
-.cards {
+.slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    width: 800px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: black;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 1.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1.5s;
+    transform: scale(1.08);
+}
+
+
+/* .cards {
     padding: 2rem;
 }
 
@@ -114,4 +162,4 @@ h1 {
     .cards__item {
         margin-bottom: 2rem;
     }
-}
+} */

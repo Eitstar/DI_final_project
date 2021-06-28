@@ -46,7 +46,7 @@ return (
               <img src={element.image}alt="" /> 
 <div className='btn-1 '>
           <a href="http://localhost:3000/recipes">
-       <span >Click for Recipes</span>        </a>             
+       <span >Click for Recipes</span>   </a>             
 </div>
                                                             
      

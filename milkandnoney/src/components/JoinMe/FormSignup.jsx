@@ -53,10 +53,8 @@ const FormSignup=({ submitForm })=> {
                       value={values.visitback}onChange={handleChange} />
            </div>
 
-           <div className='btn-1 '>
-                        <button  type='submit'> Sign Up  </button>  
-                  
-                
+           <div className='form-button'>
+                    <button  type='submit'> Sign Up  </button>  
                    <button  type='reset'>   reset</button> 
            </div>     
 
@@ -72,7 +70,8 @@ const FormSignup=({ submitForm })=> {
      
      
      <span className="form-input-login">
-                         Already Signed up? You Can Login  <a href='#'>Here </a>
+        <h4>        Already Signed up? You Can Login  <a href='#'>Here </a></h4>
+                 
      </span>
           </form>
     </div>                                                             

@@ -13,10 +13,8 @@ const JoinMeMain = () => {
     <>
       <div className='form-container'>
 
-    {/* <Link to='/'>  
-
         <span className='close-btn'>×</span>
-</Link> */}
+
         <div className='form-content-left'>
           <img className='form-img' src='/images/glimpse.jpg' alt='' />
         </div>

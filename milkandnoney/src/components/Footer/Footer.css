@@ -16,6 +16,16 @@
     transition: .4s ease-in-out transform, .4s ease-in-out box-shadow;
 }
 
+.footer-h-three {
+    color: #fff !important;
+    font-size: 1rem;
+}
+
+.footer-h-three:hover {
+    color: #242424 !important;
+    transform: scale(1.5)
+}
+
 .footer-subscription {
     display: flex;
     flex-direction: column;

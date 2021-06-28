@@ -21,10 +21,11 @@ const prevSlide = () =>{
 if(!Array.isArray(slides) || slides.lenght <=0){
                     return null
 }
-
-
                     return (
-      <section className='slider'> 
+     
+                 <div>      <h2>The best Israeli food has to offer</h2>        
+      <section className='slider'>
+            
        <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />                  
        <FaArrowAltCircleRight className='right-arrow ' onClick={nextSlide} />     
                    
@@ -37,7 +38,8 @@ return(
     
 )
 })}
-   </section>                                     
+   </section>  
+   </div>                                     
                     )
 }
 

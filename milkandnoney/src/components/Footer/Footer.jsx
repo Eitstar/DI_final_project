@@ -1,6 +1,5 @@
 import React from 'react';
 import './Footer.css';
-// import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -11,12 +10,12 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h3>About Us</h3>
+            <h5 className='footer-h-three'>About Us</h5>
             <Link to='/join-me'>How it works</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
-            <h3>Contact Us</h3>
+            <h5 className='footer-h-three'>Contact Us</h5>
             <Link to='/'>Contact</Link>
             <Link to='/'>Support</Link>
 
@@ -24,7 +23,7 @@ function Footer() {
         </div>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h3>Social Media</h3>
+            <h5 className='footer-h-three'>Social Media</h5>
             <Link to='/'>Instagram</Link>
             <Link to='/'>Twitter</Link>
           </div>

@@ -20,7 +20,7 @@ return (
                         <h2>The Cuisine Timeline </h2>              
                             </div>
                             <div>
-    <iframe title ='song trail'  src="https://open.spotify.com/embed/track/19N0Zo0QNyhMyQ41c9B62V?theme=0" width="20%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" className='spotify'></iframe>
+    {/* <iframe title ='song trail'  src="https://open.spotify.com/embed/track/19N0Zo0QNyhMyQ41c9B62V?theme=0" width="20%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" className='spotify'></iframe> */}
 
                             </div>
          

@@ -1,33 +1,60 @@
 const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcryptjs');
-// const { check, validationResult } = require('express-validator/check');
-const { body, validationResult } = require('express-validator');
-const User = require('../models/User')
+const User = require('../models/User');
+const { validationResult } = require('express-validator');
+const { response } = require('express');
+const jwt = require('jsonwebtoken')
+const config = require('config')
+    //@route POST api/users
+    //@desc register a user
+    // @access Public
+router.post('/',
 
-//@route POST api/users
-//@desc register a user
-// @access Public
-router.post(
-    '/',
-    // username must be an email
-    body('email').isEmail(),
-    // password must be at least 5 chars long
-    body('password').isLength({ min: 5 }),
-    (req, res) => {
-        // Finds the validation errors in this request and wraps them in an object with handy functions
+    async(req, res) => {
+        console.log(req.body);
+        const { name, email, password } = req.body
+            // Finds the validation errors in this request and wraps them in an object with handy functions
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
-            return res.status(400).json({ errors: errors.array() });
+            res.status(400).send({ message: "invalid input" });
         }
+        let createdUser;
+        try {
 
-        User.create({
-            username: req.body.username,
-            password: req.body.password,
-        }).then(user => res.json(user));
+            createdUser = new User({
+                name,
+                email,
+                password
+            })
+
+
+        } catch (err) {
+            console.log(err);
+        }
+        try {
+            await createdUser.save()
+            const payload = {
+                user: {
+                    id: user.id
+                }
+            }
+            jwt.sign(payload, config.get('jwtSecret'), {
+                expiresIn: 3600000 //3600
+            }, (err, token) => {
+                if (err) throw err;
+                res.json({ token });
+            });
+        } catch (err) {
+            console.log(err);
+        }
+        res.json({ user: createdUser })
+
     },
+
 );
 
+module.exports = router;
 
 
 

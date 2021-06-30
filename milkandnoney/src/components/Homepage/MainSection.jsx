@@ -9,7 +9,7 @@ const HomePage =(()=> {
   
     <div className='main-container'> 
 <div id='trail'> 
- <h2 className="headTextIndex"> Begin Your Journey into the History of the Israeli Cuisine....</h2>
+ <h3 className="headTextIndex"> Begin Your Journey into the History of the Israeli Cuisine....</h3>
 </div> 
 <div className='btn-continue-journey'>
   <a href='#movie'>
@@ -19,6 +19,13 @@ buttonStyle='btn--outline'
 buttonSize='btn--large'> Begin Here <i className='far fa-play-circle' />
 </Button>
 </a>
+   <Link to='/login'>
+<Button 
+className='btns' 
+buttonStyle='btn--outline' 
+buttonSize='btn--large'> registered? Login here  <i className='far fa-play-circle' />
+</Button>
+</Link>
 </div> 
 
 
@@ -33,7 +40,7 @@ buttonSize='btn--large'> Begin Here <i className='far fa-play-circle' />
  </div>
   </div>
  <div className="forbidden-fruit"> 
-
+<div>
 
  <img  className="forbidden-img" src="/images/apple.jpg" alt="Forbidden fruit" /> 
  
@@ -41,13 +48,15 @@ buttonSize='btn--large'> Begin Here <i className='far fa-play-circle' />
 
 וַיְצַו ה' אֱלֹהִים עַל-הָאָדָם לֵאמֹר מִכֹּל עֵץ-הַגָּן אָכֹל תֹּאכֵל. וּמֵעֵץ הַדַּעַת טוֹב וָרָע לֹא תֹאכַל מִמֶּנּוּ, כִּי בְּיוֹם אֲכָלְךָ מִמֶּנּוּ מוֹת  תמוּתָּ.
 טוֹב הָעֵץ לְמַאֲכָל וְכִי תַאֲוָה הוּא לָעֵינַיִם וְנֶחְמָד הָעֵץ לְהַשְׂכִּיל</p>
-
+</div>
+<div>
  <img  className="forbidden-img" src="/images/milk_and_honey_400.jpg" alt="Forbidden fruit" /> 
 
 
 
   <p className='par-text'>טוֹבָה הָאָרֶץ מְאֹד מְאֹד: אִם חָפֵץ בָּנוּ ה' וְהֵבִיא אֹתָנוּ אֶל הָאָרֶץ הַזֹּאת וּנְתָנָהּ לָנוּ אֶרֶץ אֲשֶׁר הִוא זָבַת חָלָב וּדְבָשׁ</p>
 
+</div>
 </div>
 
 <div className='top-main' >

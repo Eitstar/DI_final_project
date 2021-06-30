@@ -32,10 +32,16 @@ if(!Array.isArray(slides) || slides.lenght <=0){
 {SliderData.map((slide ,index)=>{                   
 return(
                     <div  className={index === current ?'slide active' : 'slide'}key={index}>
-                                        {index === current &&  <img src={slide.image} alt="Food Images" className='image'/> }
-                                            
+                           {index === current && <a href="{slide.url}"  className='url'> <h3 className='description'>{slide.description}</h3></a> }
+                        {index === current &&  <img src={slide.image} alt="Food Images" className='image'/> }
+                                    
+                                     
+                                           
+                                     
+                                          
                     </div>
-    
+                  
+
 )
 })}
    </section>  

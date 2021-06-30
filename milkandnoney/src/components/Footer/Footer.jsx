@@ -24,8 +24,8 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h5 className='footer-h-three'>Social Media</h5>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Twitter</Link>
+            <Link to='https://twitter.com/MilkAnd39971477'>Instagram</Link>
+            <Link to='/https://twitter.com/MilkAnd39971477'>Twitter</Link>
           </div>
         </div>
               <Link to='/about' className='imgLogoDiv'>
@@ -38,23 +38,17 @@ function Footer() {
          
       
           <div class='social-icons'>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
+           
+            <a   class='social-icon-link instagram' target='_blank' aria-label='Instagram' href=" https://www.instagram.com/milk_and_honey_1_1/">
 
+  <i class='fab fa-instagram' />
+            </a>
+          
+              <a  class='social-icon-link' target='_blank' aria-label='Twitter' href="https://twitter.com/MilkAnd39971477">
+                 <i class='fab fa-twitter' />
+              </a>
+             
+         
 
           </div>
         

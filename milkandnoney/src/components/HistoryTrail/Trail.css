@@ -70,9 +70,10 @@ span {
     transform: scaleX(0);
 }
 
-.spotify {
+
+/* .spotify {
     position: sticky;
     top: 0;
     z-index: 999;
     border-radius: 10px;
-}
+} */

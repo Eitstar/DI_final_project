@@ -1,15 +1,20 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import validate from './validateInfo';
 import useForm from './useForm';
 import './Form.css';
+import { Link } from 'react-router-dom';
+import { Appcontext } from '../pages/JoinMe';
+
 // import '../Button/Button.css'
 
 const FormSignup=({ submitForm })=> {
-                    const{handleChange, handleSubmit, values, errors } =useForm(
+   const {message,setMessage}= useContext(Appcontext);
+      const{handleChange, handleSubmit, values, errors } =useForm(
  submitForm,
     validate
 );
-  return (         
+  return (       
+   
      <div className="form-content-right">
                                 
         <form action="" className='form' onSubmit={handleSubmit}  noValidate>
@@ -23,7 +28,7 @@ const FormSignup=({ submitForm })=> {
            </div>
 
              <div className="form-inputs">
-                <label htmlFor="email" className='form-label'> <h4>Your Full Email </h4>  </label>
+                <label htmlFor="email" className='form-label'> <h4>Your Email </h4>  </label>
                      <input id='email' type="email" className='form-input' name='email'
                       placeholder='Enter Here' value={values.email}onChange={handleChange}/>
 
@@ -54,27 +59,28 @@ const FormSignup=({ submitForm })=> {
            </div>
 
            <div className='form-button'>
-                    <button  type='submit'> Sign Up  </button>  
+                    <button  type='submit'> Sign Up  </button>   
+                      <Link to='/'>             
                    <button  type='reset'>   reset</button> 
+                   </Link>
            </div>     
 
-{/* <div className='btn-1 '>
-          <a href="http://localhost:3000/">
-       <span >Sign Up </span>   </a>  
-           <a href="http://localhost:3000/join-me">
-       <span >Reset</span>   </a>                        
-</div> */}
 
-
-           
-     
      
      <span className="form-input-login">
-        <h4>        Already Signed up? You Can Login  <a href='#'>Here </a></h4>
+        <h4>        Already Signed up? You Can Login  <a href='/login'>Here </a></h4>
                  
      </span>
+
+                  {/* <div>
+  <h1>{message}</h1>
+  </div> */}
           </form>
-    </div>                                                             
+
+ 
+    </div>   
+    
+                                                              
         )
 }
 

@@ -3,7 +3,6 @@ import timelineElements from './TimelineElements'
 import { 
         VerticalTimeline , VerticalTimelineElement} from 'react-vertical-timeline-component'
 import "react-vertical-timeline-component/style.min.css"
-// import { element } from 'prop-types'
 import  './Trail.css'
 
 
@@ -15,11 +14,15 @@ return (
 
                     <div>
 
-                            
+                         
                             <div id='trail'>
                         <h2>The Cuisine Timeline </h2>              
                             </div>
                             <div>
+
+ <audio autoplay>
+  <source src="../../../public/milk_and_honey.mp3" type="audio/wav/mp3" />
+</audio>                                   
     {/* <iframe title ='song trail'  src="https://open.spotify.com/embed/track/19N0Zo0QNyhMyQ41c9B62V?theme=0" width="20%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" className='spotify'></iframe> */}
 
                             </div>

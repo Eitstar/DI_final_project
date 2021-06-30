@@ -1,0 +1,32 @@
+.form-back-login {
+    background-image: url('../../assetsSrc/allinbible.jpg') !important;
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    /* width: 100%; */
+}
+
+.login-form {
+    text-decoration: none;
+    border: 2px solid #010100;
+    padding: 15px;
+    color: #fff;
+    position: relative;
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    background-color: #242424;
+    margin: 50px auto;
+    width: 500px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    height: 600px;
+}
+
+.login-form-inputs {
+    margin: 50px;
+}
+
+button:hover {
+    background-color: rgb(163, 87, 9);
+}

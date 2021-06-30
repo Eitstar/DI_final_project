@@ -46,6 +46,25 @@
 }
 
 
+/* .url {
+    display: flex;
+    position: relative;
+    background-color: aqua;
+    height: 20px;
+    width: 400px;
+} */
+
+.description {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #242424;
+    height: 20px;
+    width: 800px;
+    /* background-color: aqua; */
+}
+
+
 /* .cards {
     padding: 2rem;
 }

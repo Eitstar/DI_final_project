@@ -24,8 +24,15 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h5 className='footer-h-three'>Social Media</h5>
-            <Link to='https://twitter.com/MilkAnd39971477'>Instagram</Link>
-            <Link to='/https://twitter.com/MilkAnd39971477'>Twitter</Link>
+
+             <a   target='_blank' aria-label='Instagram' href='https://www.instagram.com/milk_and_honey_1_1/'>
+
+          Instagram
+            </a>
+            
+              <a  target='_blank' aria-label='Twitter' href='https://twitter.com/MilkAnd39971477/'>
+               Twitter
+              </a>
           </div>
         </div>
               <Link to='/about' className='imgLogoDiv'>
@@ -35,8 +42,7 @@ function Footer() {
  
       <section class='social-media'>
         <div class='social-media-wrap'>
-         
-      
+              
           <div class='social-icons'>
            
             <a   class='social-icon-link instagram' target='_blank' aria-label='Instagram' href=" https://www.instagram.com/milk_and_honey_1_1/">
@@ -48,12 +54,12 @@ function Footer() {
                  <i class='fab fa-twitter' />
               </a>
              
-         
 
           </div>
         
         </div>
-      <small class='website-rights'>Milk & Honey © 2021</small>
+        <div class='website-rights'>Milk & Honey © 2021 <a className='footer-h-three' href="http://localhost:3000/about "> <h5> By Eitan Marks</h5></a></div>
+      
         
       </section>
     </div>

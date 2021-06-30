@@ -20,9 +20,7 @@ const JoinMeMain = () => {
         </div>
         {!isSubmitted ? (
           <FormSignup submitForm={submitForm} />
-        ) :       <div>
-  <h1>{message}</h1>
-  </div> (
+        ) :    (
           <FormSuccess />
 
         )}

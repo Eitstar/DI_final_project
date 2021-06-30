@@ -8,7 +8,7 @@ const FormSuccess = () => {
       <h1 className='form-success'>We have received your request!</h1>
 
 <div className='form-button'>
-        <Link to='/join-me'>
+        <Link to='/'>
           <button  type='submit'> Take Me Back Home  </button> 
         </Link>
     </div>

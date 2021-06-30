@@ -5,21 +5,27 @@ import './Form.css';
 import { Link } from 'react-router-dom';
 import { Appcontext } from '../pages/JoinMe';
 
-// import '../Button/Button.css'
-
 const FormSignup=({ submitForm })=> {
+
+  function refreshPage() {
+     window.location.reload(false);
+  }
+
+
    const {message,setMessage}= useContext(Appcontext);
       const{handleChange, handleSubmit, values, errors } =useForm(
  submitForm,
     validate
 );
+
+
   return (       
    
      <div className="form-content-right">
                                 
         <form action="" className='form' onSubmit={handleSubmit}  noValidate>
          
-           <div className="form-inputs"> <h4>Your Full Name</h4>
+           <div className="form-inputs"> <h3>Your Name</h3>
                 <label htmlFor="username" className='form-label'> </label>
                      <input id='username' type="text" className='form-input' name='username'
                     placeholder='Enter Here' value={values.username}onChange={handleChange} />
@@ -28,14 +34,14 @@ const FormSignup=({ submitForm })=> {
            </div>
 
              <div className="form-inputs">
-                <label htmlFor="email" className='form-label'> <h4>Your Email </h4>  </label>
+                <label htmlFor="email" className='form-label'> <h3>Your Email </h3>  </label>
                      <input id='email' type="email" className='form-input' name='email'
                       placeholder='Enter Here' value={values.email}onChange={handleChange}/>
 
                       {errors.email && <p>{errors.email}</p>}
                     </div>
                         <div className="form-inputs">
-                <label htmlFor="password" className='form-label'> <h4> Password</h4>   </label>
+                <label htmlFor="password" className='form-label'> <h3> Password</h3>   </label>
                      <input id='password' type="password" className='form-input' name='password'
                      value={values.password}onChange={handleChange}   placeholder='Enter Here'/>
 
@@ -43,7 +49,7 @@ const FormSignup=({ submitForm })=> {
                     </div>
                        <div className="form-inputs">
                 <label htmlFor="password2" className='form-label'>
-              <h4>  Confirm Password  </h4>
+              <h3>  Confirm Password  </h3>
                 </label>
                      <input id='password2' type="password" className='form-input' name='password2'
                       value={values.password2}onChange={handleChange} />
@@ -52,7 +58,7 @@ const FormSignup=({ submitForm })=> {
                     </div>
                               <div className="form-inputs">
                 <label htmlFor="visitback" className='form-label'>
-            <h4>   Was the  information on the site was helpful? </h4>
+            <h3>   Was the  information on the site was helpful? </h3>
                 </label>
                      <input id='visitback' type="range" className='form-input' name='visitback'
                       value={values.visitback}onChange={handleChange} />
@@ -60,11 +66,10 @@ const FormSignup=({ submitForm })=> {
 
            <div className='form-button'>
                     <button  type='submit'> Sign Up  </button>   
-                      <Link to='/'>             
-                   <button  type='reset'>   reset</button> 
+                      <Link to='/join-me'>             
+                   <button onClick={refreshPage}> reset</button> 
                    </Link>
            </div>     
-
 
      
      <span className="form-input-login">
@@ -72,9 +77,9 @@ const FormSignup=({ submitForm })=> {
                  
      </span>
 
-                  {/* <div>
-  <h1>{message}</h1>
-  </div> */}
+                  <div>
+  <h2>{message}</h2>
+  </div>
           </form>
 
  

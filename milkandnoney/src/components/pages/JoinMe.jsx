@@ -10,10 +10,6 @@ function JoinMe() {
                                         <div>
                                          <h1>Join Us Today!!!</h1> 
                                          <Appcontext.Provider value ={{message,setMessage}}>
-                                                              <div>
-  <h1>{message}</h1>
-  </div>
-
                                      <JoinMeMain/>   
                                     <Footer/>  
                                 </Appcontext.Provider>
